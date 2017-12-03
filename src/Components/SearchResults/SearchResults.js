@@ -9,7 +9,7 @@ export class SearchResults extends React.Component {
             <div className="SearchResults">
                 <h2>Results</h2>
                 <TrackList tracks={this.props.searchResults} 
-                 key={track.id}
+                 key={track.id} track={this.props.tracks.map()}
                 />
              </div>
     }
