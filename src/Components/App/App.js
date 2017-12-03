@@ -8,10 +8,23 @@ import './../Playlist/Playlist';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state.searchResults = {
-      name: '',
-      artist: '',
-      album: ""
+    this.state = { searchResults: [{
+      name: 'Send Your Love',
+      artist: 'Sting',
+      album: 'Sacred Love'
+    },
+    {
+      name: 'You Can Close Your Eyes',
+      artist: 'James Taylor',
+      album: 'Mud Slide Slim'
+    ,
+    {
+      name: 'A Case of You',
+      artist: 'Joni Mitchell',
+      album: 'Miles of Aisles'
+    }
+  ]
+     
     }
     
   }
