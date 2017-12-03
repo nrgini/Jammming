@@ -3,12 +3,19 @@ import './SearchResults.css';
 import './Components/TrackList/TrackList.js';
 
 
-class SearchResults extends React.Component {
+export class SearchResults extends React.Component {
     render () {
-        <div className="SearchResults">
-        <h2>Results</h2>
-        <!-- Add a TrackList component -->
-      </div>
+        return
+            <div className="SearchResults">
+                <h2>Results</h2>
+                <TrackList tracks={this.props.searchResults} 
+                 
+                />
+             </div>
+    }
+
+    newMethod() {
+        return this;
     }
 }
 
