@@ -14,9 +14,9 @@ class Track extends React.Component {
     renderAction() {
         return 
             if (this.isRemoval) {
-                console.log(<a>-</a>);
+                console.log(<a className="Track-action">-</a>);
             } else {
-                console.log(<a>+</a>);
+                console.log(<a className="Track-action">+</a>);
             }
     }
 }
