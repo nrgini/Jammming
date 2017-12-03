@@ -9,7 +9,9 @@ export class SearchResults extends React.Component {
             <div className="SearchResults">
                 <h2>Results</h2>
                 <TrackList tracks={this.props.searchResults} 
-                 key={track.id} track={this.props.tracks.map()}
+                 key={track.id} track={this.props.tracks.map(track => {
+                     return this.props.track.name, this.props.track.artist, this.props.track.album;
+                 })}
                 />
              </div>
     }
