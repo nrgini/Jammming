@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchResults.css';
-import Tracklist from './Components/TrackList/TrackList';
+import TrackList from '../TrackList/TrackList';
 
 class SearchResults extends React.Component {
     render () {
@@ -8,8 +8,8 @@ class SearchResults extends React.Component {
             <div className="SearchResults">
                 <h2>Results</h2>
                 <TrackList tracks={this.props.searchResults} 
-                 key={track.id} onAdd={this.props.onAdd} />
-             </div>
+                 onAdd={this.props.onAdd} />
+            </div>
         );
     }
 };
