@@ -1,22 +1,17 @@
 import React from 'react';
 import './SearchResults.css';
-import './Components/TrackList/TrackList.js';
+import Tracklist from './Components/TrackList/TrackList';
 
-
-export class SearchResults extends React.Component {
+class SearchResults extends React.Component {
     render () {
-        return
+        return (
             <div className="SearchResults">
                 <h2>Results</h2>
                 <TrackList tracks={this.props.searchResults} 
-                 key={track.id} />
-                />
+                 key={track.id} onAdd={this.props.onAdd} />
              </div>
+        );
     }
-
-    newMethod() {
-        return this;
-    }
-}
+};
 
 export default SearchResults;
